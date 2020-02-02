@@ -1,0 +1,64 @@
+nav{
+    background-color: #E83E8C;
+
+}
+
+body{
+
+    padding: top 70px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+footer {
+    background-color: #E83E8C;
+}
+
+
+.btn-link {
+    color:#1C7CD5;
+    font-size: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #373a3c;
+}
+
+.list-group-item {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#navlist {
+    text-align: left;
+    margin-left: 30vw;
+}
+
+#head-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #707070;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #navlist {
+        text-align: left;
+        margin-left: 50vw;
+    }
+ }
