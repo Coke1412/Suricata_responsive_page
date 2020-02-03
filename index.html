@@ -23,29 +23,30 @@
     <!-- my style -->
     <link rel="stylesheet" href="./assets/css/style.css">
     
-    <title>Suricata</title>
+    <title>Suricata Products Page</title>
 </head>
 <body>
     
     <!--Navbar begins-->
     <nav class="navbar navbar-expand-sm navbar-light">
         
-            <div class="row mr-1">
-                <img src="./assets/img/logo.png" class="pl-5 ml-4 col-8 col-md-3 col-xl-2">
+            <div class="row" id="index">
+                <img src="./assets/img/logo.png" class="pl-5 ml-2 col-8 col-sm-3 col-lg-2" id="logo">
                 <button class="navbar-toggler d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse ml-5" id="collapsibleNavId">
-                    <ul id="navlist" class="navbar-nav pl-5 mt-2">
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul id="navlist" class="navbar-nav pl-1 mt-2">
                         <li class="nav-item active">
-                            <a class="nav-link text-light" href="#">Inicio</a>
+                            <a class="nav-link text-light pr-3" href="#index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Productos</a>
+                            <a class="nav-link text-light" href="#products">Productos</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-light" href="#">Contacto</a>
+                            <a class="nav-link text-light" href="#contact">Contacto</a>
                         </li>
                     </ul>        
                 </div>
@@ -57,13 +58,13 @@
 
 
     <header>
-        <h1 id="head-title" class="text-center display-5 my-5 pb-2">Nuestros productos</h1>
+        <h1 id="head-title" class="text-center display-5 my-5 pb-5">Nuestros productos</h1>
     </header>
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="products">
         
         <!--first card deck begins-->
-        <div class="card-deck container mb-5 .col-12 .col-md-12 .col-xl-12">
+        <div class="card-deck container mb-5 col-12">
             <div class="card mb-5">
                 <img src="./assets/img/colaciones.jpg" class="card-img-top" alt="colaciones">
                 <div class="card-body">
@@ -102,13 +103,13 @@
                     </ul>
                 </div>
             </div>
-            
-            <!-- first card deck ends-->
+        </div>    
+        <!-- first card deck ends-->
                    
-            <!--second card deck begins-->
-            <div class="card-deck container">
+        <!--second card deck begins-->
+            <div class="card-deck container col-12">
                 <div class="card mb-5">
-                    <img src="./assets/img/verduras.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/img/verduras.jpg" class="card-img-top" alt="verduras">
                     <div class="card-body">
                         <h5 class="card-title">Verduras</h5>
                         <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -120,7 +121,7 @@
                     </div>
                 </div>
                 <div class="card mb-5">
-                    <img src="./assets/img/dulces.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/img/dulces.jpg" class="card-img-top" alt="dulces">
                     <div class="card-body">
                         <h5 class="card-title">Dulces</h5>
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -132,7 +133,7 @@
                     </div>
                 </div>
                 <div class="card mb-5">
-                    <img src="./assets/img/empanadas.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/img/empanadas.jpg" class="card-img-top" alt="empanadas">
                     <div class="card-body">
                         <h5 class="card-title">Empanadas<h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -144,22 +145,41 @@
                     </div>
                 </div>
             </div>                     
-        </div>                    
-    </div>                        
+    </div>                    
+                            
     
     <!--second card deck ends-->
                             
                             
     <!--credit card section begins-->
+
+    <section id="contact" class="col-12 pt-5 pb-5">
+        <div class="row">
+            <h2 class="display-5 text-left text-white pr-2 pl-2 pt-2" id="cardstitle">Ahora aceptamos</h2>
+                <div class="text-right ml-4" id="icons-section">
+                    <i class="fab fa-cc-mastercard text-white display-4 pr-2"></i>
+                    
+                    <i class="fab fa-cc-visa text-white display-4 pr-2"></i>
+                    
+                    <i class="fab fa-cc-amex text-white display-4 pr-2"></i>
+                    
+                    <i class="fab fa-cc-diners-club text-white display-4 pr-2"></i>
+                    
+                    <i class="fab fa-cc-paypal text-white display-4 pr-2"></i>
+                    
+                    <i class="fab fa-cc-discover text-white display-4 pr-2"></i>
+                </div>
+        </div>        
+    </section>
                             
-    <footer class="p-5" >
-        <img src="./assets/img/logo-footer.png" alt="suricata image footer" height="67.39px" class="ml-5 pl-5" >
-    </footer>
-                            
+                
     <!--credit card section ends-->
                             
     <!--footer-->
-                            
+    <footer class="p-5 text-center col-12">
+        <img src="./assets/img/logo-footer.png" alt="suricata image footer" height="67.39px" class="" >
+    </footer>
+                      
                             
                             
                             
@@ -179,4 +199,3 @@
                             
 </body>
 </html>
-                        

@@ -10,10 +10,14 @@ body{
 }
 
 
+
 footer {
     background-color: #E83E8C;
 }
 
+
+
+/* Classes */
 
 .btn-link {
     color:#1C7CD5;
@@ -30,6 +34,10 @@ footer {
     font-size: 10px;
 }
 
+
+
+/* IDs */
+
 #navlist {
     text-align: left;
     margin-left: 30vw;
@@ -41,24 +49,60 @@ footer {
     color: #707070;
 }
 
+#contact, h2 {
+    background-color: #17A2B8;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+   
+}
 
 
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap
+
+/* Media Queries */
+
 
 Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { }
+
+@media (min-width: 576px) {
+
+   
+    #logo {
+        padding-top: 2vw;
+    }
+
+ }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+@media (min-width: 768px) { 
+    #navlist {
+        margin-left: 40vw;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        display: none;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
+@media (min-width: 992px) { 
+    #navlist {
+        margin-left: 50vw;
+    }
+
+   
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #navlist {
-        text-align: left;
-        margin-left: 50vw;
+    #head-title {
+        font-size: 6vw;
     }
+   
+    #cardstitle {
+        margin-left:10vw;
+        margin-right:10vw;
+    }
+
  }
